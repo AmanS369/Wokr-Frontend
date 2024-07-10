@@ -1,0 +1,11 @@
+/* Editor.css */
+.right-upper-corner {
+  position: fixed;
+  top: 10px; /* Adjust the value as needed */
+  right: 10px; /* Adjust the value as needed */
+  background-color: white; /* Optional: To make it more visible */
+  padding: 10px; /* Optional: Add some padding */
+  border-radius: 5px; /* Optional: Add border-radius */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  z-index: 1000; /* Ensure it's on top of other elements */
+}

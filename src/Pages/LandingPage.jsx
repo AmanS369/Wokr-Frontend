@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 const LandingPage = () => {
   const isAuthenticated = useSelector(
-    (state) => state.reducer.user.isAuthenticated
+    (state) => state.reducer.user.isAuthenticated,
   );
   const backgroundImageUrl = "https://source.unsplash.com/1600x900/?abstract";
 

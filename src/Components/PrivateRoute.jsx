@@ -5,10 +5,10 @@ import { Outlet } from "react-router-dom";
 
 const PrivateRoute = ({ element, ...rest }) => {
   const isAuthenticated = useSelector(
-    (state) => state.reducer.user.isAuthenticated
+    (state) => state.reducer.user.isAuthenticated,
   );
   const location = useLocation();
-
+  console.log("the loc", location);
   return (
     <>
       {isAuthenticated ? (
@@ -16,6 +16,7 @@ const PrivateRoute = ({ element, ...rest }) => {
       ) : (
         <>
           {location && localStorage.setItem("redirectPath", location.pathname)}
+
           <Navigate to="/login" />
         </>
       )}

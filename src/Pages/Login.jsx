@@ -19,8 +19,10 @@ const Login = () => {
 
   useEffect(() => {
     if (isAuthenticated) {
-      // toast.warn("You are already logged in");
-      navigate("/user/home");
+      const redirectPath = localStorage.getItem("redirectPath") || "/user/home";
+      console.log(redirectPath);
+      localStorage.removeItem("redirectPath");
+      navigate(redirectPath);
     }
   }, [isAuthenticated, navigate]);
 
@@ -61,6 +63,8 @@ const Login = () => {
         // Redirect to the originally requested page or the default home page
         const redirectPath =
           localStorage.getItem("redirectPath") || "/user/home";
+        console.log(redirectPath);
+        // localStorage.removeItem("redirectPath");
         navigate(redirectPath, { replace: true });
       } else {
         const errorData = await loginResponse.json();
