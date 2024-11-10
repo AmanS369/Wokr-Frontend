@@ -10,11 +10,17 @@ Wokr is a powerful real-time collaborative workspace designed to enhance team pr
 - **Live Editor Display**: View who’s editing and what they’re working on in real time.
 - **Intuitive Workspace Management**: Organize your workspace efficiently with to-do lists and Kanban boards.
 
+
+
 ## Demo Video
 
 <video src="media/demo.mp4" controls="controls" style="max-width: 100%;">
     Your browser does not support the video tag.
 </video>
+
+## Installation
+
+
 ## Installation
 
 ### Prerequisites
